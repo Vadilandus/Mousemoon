@@ -1,0 +1,137 @@
+* {
+  cursor: none;
+}
+.follow-cursor {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  transform: translateY(-50%) translateX(-50%); /* центрируем кружок */
+  position: absolute; /* задаём абсолютное позиционирование, чтобы элемент не влиял на остальные элементы и его можно было бы позиционировать следом за курсором */
+  z-index: 999; /* чтобы элемент был над остальными элементами */
+  pointer-events: none; /* чтобы сквозь элемент можно было взаимодействовать с элементами, находящимися под ним */
+  transition: width 0.64s, height 0.64s, border-radius 0.64s, background 0.64s;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Активный класс для кружка при наведении на ссылку */
+.follow-cursor_active {
+  height: 8px;
+  width: 8px;
+  border-width: 2px;
+  background: rgba(255, 255, 255, 0.32);
+}
+/* Скрываем декоративный элемент при ширине браузера меньше 992px */
+@media (max-width: 991.98px) {
+.follow-cursor {
+  display: none;
+}
+}
+
+
+
+body{
+  height: 2000px ;
+  background-image: url('images/backg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Aqum';
+  color:white;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.logo{
+  text-align: center;
+  position: relative;
+}
+.inner {
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 75; left: 0; bottom: 0; right: 0;
+}
+.star1{
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 80%; bottom: 20%; right: 0;
+}
+.star2{
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 80%; bottom: 83%; right: 0;
+}
+.star3{
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 87%; bottom: 45%; right: 0;
+}
+.levitate {
+  animation: levitate-animation 2s ease-in-out infinite alternate;
+  transform-origin: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transform: translate3d(0, 0, 0);
+  }
+.levitate1 {
+  animation: levitate-animation 1.5s ease-in-out infinite alternate;
+  transform-origin: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transform: translate3d(0, 0, 0);
+  }
+  
+  @keyframes levitate-animation {
+  0% {
+  transform: translate3d(0, 0, 0);
+  }
+  100% {
+  transform: translate3d(0, -10px, 0);
+  }
+  }
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+.onner{
+  margin-bottom: 3.5%;
+}
+.innerZ{
+  position: absolute;
+  top: 0; left: 0; bottom: 10%; right: 103%;
+  width: 15%;
+  animation: 50s linear infinite rotate;
+}
+@font-face {
+  font-family: "Aqum"; /* Гарнитура шрифта */
+  src: url(fonts/Aqum\ 2\ Classic.otf); /* Путь к файлу со шрифтом */
+ }
+.text{
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 3%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 0.1%;
+  padding-bottom: 0.1%;
+  border-radius: 25px;
+  text-shadow: rgb(232, 204, 144) 3px 0 10px;
+  font-size: 24px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.as{
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  transform: rotate(270deg);
+  top: 70%; left: 0; bottom: 0; right: 90%;
+}
