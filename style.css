@@ -37,7 +37,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Aqum';
-  color:white;
+  color:#ffffff;
 }
 a{
   text-decoration: none;
@@ -63,7 +63,7 @@ a{
   overflow: auto;
   margin: auto;
   position: absolute;
-  top: 0; left: 80%; bottom: 83%; right: 0;
+  top: 0; left: 0%; bottom: 70%; right: 0;
 }
 .star3{
   overflow: auto;
@@ -98,7 +98,7 @@ a{
   text-shadow: #ffffff 1px 0 4px;
   }
   100% {
-  text-shadow: #ffffff 1px 0 10px;
+  text-shadow: #ffff00 1px 0 15px;
   }
   }
   
@@ -167,4 +167,11 @@ a{
   font-size: 24px;
   background-color: rgba(255, 255, 255, 0.1);
   text-align: center;
+}
+.da{
+  z-index: 9999;
+  position: absolute;
+  left: 83%;
+  width: 200px;
+  height: 200px;
 }
