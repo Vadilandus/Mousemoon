@@ -1,5 +1,6 @@
 * {
   cursor: none;
+  scrollbar-width: none; 
 }
 .follow-cursor {
   display: block;
@@ -145,4 +146,8 @@ a{
   position: absolute;
   transform: rotate(270deg);
   top: 70%; left: 0; bottom: 0; right: 90%;
+}
+.auth{
+  position: absolute;
+  top: 5%; left: 60%; bottom: 0%; right: 0;
 }
