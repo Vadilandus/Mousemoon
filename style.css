@@ -1,6 +1,5 @@
 * {
   cursor: none;
-  scrollbar-width: none; 
 }
 .follow-cursor {
   display: block;
@@ -34,7 +33,6 @@
 
 
 body{
-  height: 2000px ;
   background-image: url('images/backg.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -140,6 +138,21 @@ a{
   font-size: 24px;
   background-color: rgba(255, 255, 255, 0.1);
 }
+.imagesize {
+	width: 98%;
+	padding: 1%
+}
+.coolimage{
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 3%;
+  padding-top: 0.1%;
+  border-radius: 25px;
+  animation: glow 2s ease-in-out infinite alternate;
+  font-size: 24px;
+  background-color: rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
 .as{
   overflow: auto;
   margin: auto;
@@ -147,9 +160,13 @@ a{
   transform: rotate(270deg);
   top: 70%; left: 0; bottom: 0; right: 90%;
 }
-.auth{
-  position: absolute;
-  top: 5%; left: 60%; bottom: 0%; right: 0;
+.footer {
+  margin-top: 3%;
+  padding: 1%;
+  animation: glow 2s ease-in-out infinite alternate;
+  font-size: 24px;
+  background-color: rgba(255, 255, 255, 0.1);
+  text-align: center;
 }
 .da{
   z-index: 9999;
